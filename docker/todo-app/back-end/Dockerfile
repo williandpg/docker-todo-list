@@ -4,9 +4,7 @@
 
   WORKDIR /app/back-end
 
-  COPY node_modules.tar.gz .
-
-  RUN tar -xzf /app/back-end/node_modules.tar.gz -C /app/back-end
+  ADD node_modules.tar.gz .
 
   COPY . .
 
